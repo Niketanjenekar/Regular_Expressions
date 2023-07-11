@@ -11,14 +11,14 @@ namespace Regular_Expression
     {
         public void Validate()
         {
-            Console.WriteLine("PLease Enter the First Name ");
-            string fName = Console.ReadLine();
+            Console.WriteLine("PLease Enter the Last Name ");
+            string lName = Console.ReadLine();
 
             string vName = "^[A-Z]{1}[a-z]{2,9}$";
-            if (Regex.IsMatch(fName, vName))
+            if (Regex.IsMatch(lName, vName))
             {
-                Console.WriteLine("The First Name has Been Validated ");
-                Console.WriteLine("The Valid First Name is : " + fName);
+                Console.WriteLine("The Last Name has Been Validated ");
+                Console.WriteLine("The Valid Last Name is : " + lName);
             }
             else
             {
