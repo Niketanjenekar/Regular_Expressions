@@ -12,6 +12,9 @@ namespace Regular_Expression
         {
             Console.WriteLine("Welcome to Day-19 Regular Expressions Programs");
 
+            Reg_Exp reg_Exp = new Reg_Exp();
+            reg_Exp.Validate();
+
             Console.ReadLine();
         }
     }
