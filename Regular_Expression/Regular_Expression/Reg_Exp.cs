@@ -11,19 +11,22 @@ namespace Regular_Expression
     {
         public void Validate()
         {
-            Console.WriteLine("PLease Enter the Password ");
-            string password = Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("PLease Enter the Email ");
+                string eMail = Console.ReadLine();
 
-            string pattern = "^[a-zA-Z0-9!@#$%^&*_+]{8}$";
-                
-            if (Regex.IsMatch(password, pattern))
-            {
-                Console.WriteLine("The Password has Been Validated ");
-                Console.WriteLine("The Valid Password is : " + password);
-            }
-            else
-            {
-                Console.WriteLine("Please Enter the Valid Password ");
+                string pattern = "^[a-z]{1,}([-.+]{1}){0,1}([0-9]{1,}){0,1}[@]{1}[a-z0-9]{1,}[.][a-zA-Z]{2,3}([.]{1}[a-z]{2,3}){0,1}$";
+
+                if (Regex.IsMatch(eMail, pattern))
+                {
+                    Console.WriteLine("The Email has Been Validated ");
+                    Console.WriteLine("The Valid Email Address is : " + eMail);
+                }
+                else
+                {
+                    Console.WriteLine("Please Enter the Valid Email ");
+                }
             }
 
         }
