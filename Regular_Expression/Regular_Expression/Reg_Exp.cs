@@ -14,7 +14,7 @@ namespace Regular_Expression
             Console.WriteLine("PLease Enter the Password ");
             string password = Console.ReadLine();
 
-            string pattern = "^[A-Za-z0-9]{8}$";
+            string pattern = "^[A-Za-z0-9@#$%^&*!]{8}$";
             if (Regex.IsMatch(password, pattern))
             {
                 Console.WriteLine("The Password has Been Validated ");
