@@ -11,18 +11,18 @@ namespace Regular_Expression
     {
         public void Validate()
         {
-            Console.WriteLine("PLease Enter the Email ");
-            string eMail = Console.ReadLine();
+            Console.WriteLine("PLease Enter the Mobile Number ");
+            string mobile = Console.ReadLine();
 
-            string pattern = "^[a-zA-Z0-9.!@#$%&*]+@[A-za-z0-9.]+[a-z]{3}$";
-            if (Regex.IsMatch(eMail, pattern))
+            string pattern = "^[91]+ +[7-9]{2}[0-9]{8}$";
+            if (Regex.IsMatch(mobile, pattern))
             {
-                Console.WriteLine("The Email has Been Validated ");
-                Console.WriteLine("The Valid Email Address is : " + eMail);
+                Console.WriteLine("The Mobile Number has Been Validated ");
+                Console.WriteLine("The Valid Mobile Number is : " + mobile);
             }
             else
             {
-                Console.WriteLine("Please Enter the Valid Email ");
+                Console.WriteLine("Please Enter the Valid Mobile Number ");
             }
         }
     }
