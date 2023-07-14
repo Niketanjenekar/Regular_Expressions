@@ -11,18 +11,18 @@ namespace Regular_Expression
     {
         public void Validate()
         {
-            Console.WriteLine("PLease Enter the Mobile Number ");
-            string mobile = Console.ReadLine();
+            Console.WriteLine("PLease Enter the Password ");
+            string password = Console.ReadLine();
 
-            string pattern = "^[91]+ +[7-9]{2}[0-9]{8}$";
-            if (Regex.IsMatch(mobile, pattern))
+            string pattern = "^[A-Za-z0-9]{8}$";
+            if (Regex.IsMatch(password, pattern))
             {
-                Console.WriteLine("The Mobile Number has Been Validated ");
-                Console.WriteLine("The Valid Mobile Number is : " + mobile);
+                Console.WriteLine("The Password has Been Validated ");
+                Console.WriteLine("The Valid Password is : " + password);
             }
             else
             {
-                Console.WriteLine("Please Enter the Valid Mobile Number ");
+                Console.WriteLine("Please Enter the Valid Password ");
             }
         }
     }
