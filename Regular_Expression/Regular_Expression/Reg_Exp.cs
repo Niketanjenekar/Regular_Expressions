@@ -11,18 +11,18 @@ namespace Regular_Expression
     {
         public void Validate()
         {
-            Console.WriteLine("PLease Enter the Last Name ");
-            string lName = Console.ReadLine();
+            Console.WriteLine("PLease Enter the Email ");
+            string eMail = Console.ReadLine();
 
-            string vName = "^[A-Z]{1}[a-z]{2,9}$";
-            if (Regex.IsMatch(lName, vName))
+            string pattern = "^[a-zA-Z0-9.!@#$%&*]+@[A-za-z0-9.]+[a-z]{3}$";
+            if (Regex.IsMatch(eMail, pattern))
             {
-                Console.WriteLine("The Last Name has Been Validated ");
-                Console.WriteLine("The Valid Last Name is : " + lName);
+                Console.WriteLine("The Email has Been Validated ");
+                Console.WriteLine("The Valid Email Address is : " + eMail);
             }
             else
             {
-                Console.WriteLine("Please Enter the Valid Name");
+                Console.WriteLine("Please Enter the Valid Email ");
             }
         }
     }
